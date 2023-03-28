@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="csharpython">
+    <meta name="application-name" content="Clock">
+    <style type="text/css">
+        *#time {color:darkblue; text-align: center;}
+    </style>
+    <title>Clock</title>
+</head>
+<body>
+    <h1 id="time">Please enable javascript.</h1>
+    <script language="javascript" type="text/javascript">
+        var clockes;
+        function clockUpdate(){
+            clockes =  new Date().toLocaleString();
+            document.getElementById("time").innerHTML = clockes;
+        }
+        setInterval('clockUpdate()',1000);
+    </script>
+</body>
+</html>
